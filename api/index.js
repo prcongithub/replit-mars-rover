@@ -25,6 +25,7 @@ export default async function handler(req, res) {
       const stats = {
         totalPhotos: 1000000,
         activeRovers: 2,
+        activeSol: 4000,
         totalMissions: 5,
         lastUpdated: new Date().toISOString()
       };

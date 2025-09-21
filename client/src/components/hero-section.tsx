@@ -25,7 +25,7 @@ export default function HeroSection() {
             <Skeleton className="h-8 w-16 mx-auto mb-2" />
           ) : (
             <div className="text-3xl font-bold text-primary" data-testid="stat-total-photos">
-              {stats?.totalPhotos.toLocaleString() || '0'}
+              {stats?.totalPhotos?.toLocaleString() || '0'}
             </div>
           )}
           <div className="text-sm text-muted-foreground">Total Photos</div>
@@ -35,7 +35,7 @@ export default function HeroSection() {
             <Skeleton className="h-8 w-16 mx-auto mb-2" />
           ) : (
             <div className="text-3xl font-bold text-accent" data-testid="stat-active-sol">
-              {stats?.activeSol.toLocaleString() || '0'}
+              {stats?.activeSol?.toLocaleString() || '0'}
             </div>
           )}
           <div className="text-sm text-muted-foreground">Current Sol</div>
@@ -45,7 +45,7 @@ export default function HeroSection() {
             <Skeleton className="h-8 w-16 mx-auto mb-2" />
           ) : (
             <div className="text-3xl font-bold text-green-400" data-testid="stat-active-rovers">
-              {stats?.activeRovers || '0'}
+              {stats?.activeRovers?.toString() || '0'}
             </div>
           )}
           <div className="text-sm text-muted-foreground">Active Rovers</div>
