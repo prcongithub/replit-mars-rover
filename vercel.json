@@ -1,11 +1,17 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/public",
-  "framework": null,
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ]
 }
