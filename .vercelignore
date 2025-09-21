@@ -1,6 +1,5 @@
-server/
-*.ts
-!api/*.js
 .replit
 replit.md
-drizzle.config.ts
+server/
+.local/
+.git/
